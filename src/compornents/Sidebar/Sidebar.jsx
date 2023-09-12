@@ -3,7 +3,7 @@ import { Bookmark, Home, MessageRounded, Notifications, Person, Search, Settings
 import "./Sidebar.css"
 import Closefriend from '../Closefriend/Closefriend'
 import { Users } from '../../dummyData';
-
+import { Link } from "react-router-dom";
 
 export default function Sidebar() {
   return (
@@ -12,7 +12,9 @@ export default function Sidebar() {
         <ul className="sidebarList">
           <li className="sidebarListItem">
             <Home className="sidebarIcon" />
+            <Link to="/" style={{textDecoration: "none", color:"black"}}>
             <span className="sidebarListItemTex">ホーム</span>
+            </Link>
           </li>
           <li className="sidebarListItem">
             <Search className="sidebarIcon" />
@@ -32,7 +34,9 @@ export default function Sidebar() {
           </li>
           <li className="sidebarListItem">
             <Person className="sidebarIcon" />
-            <span className="sidebarListItemTex">プロフィール</span>
+            <Link to="/profile/M Code" style={{textDecoration: "none", color:"black"}}>
+              <span className="sidebarListItemTex">プロフィール</span>
+            </Link>
           </li>
           <li className="sidebarListItem">
             <Settings className="sidebarIcon" />

@@ -7,7 +7,7 @@ export default function Share() {
     <div className='share'>
       <div className="shareWrapper">
         <div className="shareTop">
-            <img src="./assets/person/1.jpeg" alt="" className='shareprofileImg' />
+            <img src="/assets/person/1.jpeg" alt="" className='shareprofileImg' />
             <input type="text" className='shareInput' placeholder='現在の状況'/>
         </div>
         <hr className="shareHr"/>
